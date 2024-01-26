@@ -8,7 +8,13 @@ class AnimalDescription
     end
 
     def merge_description
-        "#@animal_name #@animal_description"
+        "The #@animal_name is #@animal_description. #{bonus_description}"
+    end
+
+    private 
+
+    def bonus_description
+        "That animal is quite unique."
     end
 end
 
