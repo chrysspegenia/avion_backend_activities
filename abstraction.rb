@@ -14,6 +14,7 @@ class Purchase_cactus
 
     private
 
+    #the total_price method is being abstracted using the private method to keep it only within the Purchase_cactus class
     def total_price
         base_price = @quantity * @price
         variegated_price = @variegated ? @quantity * 500 : 0

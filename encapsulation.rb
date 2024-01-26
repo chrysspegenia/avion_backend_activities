@@ -7,6 +7,7 @@ class AnimalDescription
         @animal_description = animal_description
     end
 
+    #the variables, animal_name and animal_description, is being encapsulated in the method, merge_description
     def merge_description
         "The #@animal_name is #@animal_description. #{bonus_description}"
     end
