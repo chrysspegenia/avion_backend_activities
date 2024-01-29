@@ -28,7 +28,7 @@ class Purchase_cactus
     # end
 
     # def get_selected_breed_price
-    #     selected_breed_price = @selected_breed ? @quantity * (@price * 10) : 0
+    #     selected_breed_price = @selected_breed ? @quantity * @price * 10 : 0
     # end
 
     # def total_price
