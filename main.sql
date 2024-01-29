@@ -31,3 +31,11 @@ UPDATE students
 
 DELETE FROM students
 	WHERE id = (SELECT MAX(id) FROM students);
+
+SELECT COUNT(id) FROM students;
+
+SELECT * from students WHERE location = 'Manila';
+
+SELECT AVG(age) FROM students;
+
+SELECT * from students ORDER BY age DESC;
