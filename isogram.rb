@@ -1,7 +1,8 @@
 def is_isogram(string)
     string.downcase.split('').each_with_index do |letter, index|
        return false if string.downcase[index + 1..].include?(letter)  
-    # puts string.downcase[index + 1..]
+    #    puts string.downcase[index + 1..]
+    #    puts "#{letter} = #{index}"
     end
     true
 end
@@ -36,7 +37,7 @@ end
 
 
 
-puts is_isogram('Dermatoglyphics')
-puts is_isogram("aba")
-puts is_isogram("moOse")
+# puts is_isogram('Dermatoglyphics')
+# puts is_isogram("aba")
+# puts is_isogram("moOse")
 puts is_isogram("abcd")
