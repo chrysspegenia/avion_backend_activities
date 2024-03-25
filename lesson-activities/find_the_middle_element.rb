@@ -10,11 +10,9 @@
 # gimme([5,10,14]) => 1, 10 is the number that fits between 5 and 14 and the index of 10 in the input array is 1
 
 def find_middle_element_index(array)
-    array.each_with_index do |num, index|
-        return index if array[index] == (array.sort)[1]
-    end
+    array.each_with_index { |num, index| return index if array[index] == (array.sort)[1]}
 end
 
-p find_middle_element_index([2,3,1])
-p find_middle_element_index([5,10,14])
-p find_middle_element_index([100,31,64])
+p find_middle_element_index([2,3,1]) #0
+p find_middle_element_index([5,10,14])  #1
+p find_middle_element_index([100,31,64])  #2
